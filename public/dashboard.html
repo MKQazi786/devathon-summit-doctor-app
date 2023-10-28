@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Find doctor app</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+        <script type="module" src="https://www.gstatic.com/firebasejs/10.2.0/firebase-app-compat.js"></script>
+        <script type="module" src="https://www.gstatic.com/firebasejs/10.2.0/firebase-firestore-compat.js"></script>
+        <script type="module" src="https://www.gstatic.com/firebasejs/10.2.0/firebase-auth-compat.js"></script>
+    <link rel="stylesheet" href="dashboard.css">
+    
+</head>
+
+<body onload="getAllPost()" >
+    <header class="header">
+        <h2>Find Doctor app</h2>
+        <nav>  <button id="user"></button> <button class="logOut" onclick="signOut(event)">Logout</button> </nav>
+    </header>
+    <h1>Find your consultant</h1>
+    
+    <form >
+        <h2></h2>
+
+        <label for="postTitle">Doctor:</label> <br>
+        <input type="text" name="postTitle" id="postTitle" placeholder="Dr.Muhammad Khubaib...">
+
+        <br>
+        <label for="PostText">Enter your availability:</label>
+        <input type="text" name="PostText" id="postText" placeholder="Write which day you are available">
+
+        <br>
+        <button type="submit" onclick="createPost(event)" >submit post</button>
+    </form>
+    
+    <br>
+    <br>
+    <br>
+    <div id="result"> </div>
+
+    <br>
+    <br>
+    <br>
+    <div id="posts"> </div>
+
+    
+    <footer>
+        &copy;Web and App Developer: <br> Muhammad Khubaib <br>
+        <div class="icon">
+            <a href="https://www.github.com/MKQazi786"><i class="bi bi-github"></i> </a>
+            <a href="https://www.linkedin.com/in/muhammad-khubaib-mkqazi786/"><i class="bi bi-linkedin"></i> </a>
+            <a href="https://www.facebook.com/MKQazi786"><i class="bi bi-facebook"></i></a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="module" src="crud.js"></script>
+</body>
+
+</html>

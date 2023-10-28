@@ -1,0 +1,136 @@
+body {
+    margin: 0.1rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    background-image: url(./images/doctor\ image.webp);
+}
+
+.header {
+    background-color: rgb(105, 105, 236);
+    padding-left: 3rem;
+    padding-right: 1rem;
+    color: white;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+
+Form {
+    box-shadow:0px 0px 10px black;
+    align-self: center;
+    text-align: center;
+    font-weight: bold;
+    padding: 2rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
+    width:60%;
+    background-color: white;
+    border-radius: 0.5rem;
+}
+
+Form input {
+    font-size: large;
+    width: 75%;
+    padding: 0.7rem;
+    margin: 0.3rem;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+form>#publishBlog {
+    margin: 0.5rem;
+    /* width: 30%; */
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    border: 1px solid black;
+}
+
+.icon a {
+    color: white;
+    text-decoration: none;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    column-gap: 0.4rem;
+    margin: 0.3rem;
+    font-size: 1.5rem
+}
+
+nav{
+    display: flex;
+}
+
+
+.header>nav>.logOut {
+    margin: 0.5rem;
+    color: white;
+    border: 0px solid;
+    min-width: 30%;
+    padding: 1rem 2rem 1rem 2rem;
+    background-color: rgb(105, 105, 236);
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.header>nav>#user {
+    margin: 0.5rem;
+    color: white;
+    border: 0px solid;
+    min-width: 30%;
+    padding: 1rem 2rem 1rem 2rem;
+    background-color: rgb(105, 105, 236);
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+Form>#text {
+    margin-top: 0.5rem;
+    font-size: large;
+    width: 78%;
+    height: auto;
+    padding: 0.5rem;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+.header ~ h1 {
+    margin-top: 0rem;
+    background-color: white;
+    padding: 1rem;
+    box-shadow:0px 0px 10px black;
+}
+
+footer {
+    text-align: center;
+    background-color: rgb(105, 105, 236);
+    padding: 1rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    color: white;
+    font-size: larger;
+    border-radius: 8px;
+}
+
+.post-card {
+    box-shadow: 4px 4px 4px 4px black;
+    border-radius:0.5rem;
+    padding:0.5rem;
+    background-color: rgb(105, 105, 236);
+    margin:0rem 5rem;
+    color: white;
+}
+
+.post-card > h3 {
+    margin: 0;
+}
